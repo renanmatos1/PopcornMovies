@@ -45,7 +45,7 @@ class TvShowCell: UITableViewCell {
         
         // infos //
         tvShowNameLabel.text = tvShow.originalName
-        releaseDateTS.text = tvShow.releaseDate
+        releaseDateTS.text = tvShow.FormatDate()
         ratingTsLabel.text = String(tvShow.voteAvarage)
         historyLabelTs.text = tvShow.overview
         voteCountLabel.text = String(tvShow.voteCount)

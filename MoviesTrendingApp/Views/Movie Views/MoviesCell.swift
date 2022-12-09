@@ -55,7 +55,7 @@ class MoviesCell: UITableViewCell {
         
         // infos //
         movieNameLabel.text = movies.title
-        releaseDateLabel.text = movies.releaseDate
+        releaseDateLabel.text = movies.FormatDate()
         ratingLabel.text = String(movies.voteAvarage)
         historyLabel.text = movies.overview
         movieImage.loadFrom(UrlAdress: movies.imageUrl)

@@ -14,9 +14,8 @@ class CustomTabBarController: UITabBarController {
         
         super.viewDidLoad()
         
-        self.tabBar.unselectedItemTintColor = UIColor.red
-        self.tabBar.unselectedItemTintColor = UIColor.red
-        
+        self.tabBar.unselectedItemTintColor = UIColor.gray
+    
     }
 }
 

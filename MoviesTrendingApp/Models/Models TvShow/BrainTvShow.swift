@@ -64,6 +64,10 @@ struct BrainTvShow {
         
         do {
             
+            let dateFormat = DateFormatter()
+            dateFormat.dateFormat = "yyyy-MM-dd"
+            decoder.dateDecodingStrategy = .formatted(dateFormat)
+            
             let decodedData = try decoder.decode(TvResults.self, from: decodedData)
             
             print(decodedData)

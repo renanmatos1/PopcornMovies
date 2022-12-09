@@ -12,7 +12,7 @@ struct Movies: Codable {
     let title: String
     let voteAvarage: Double
     let voteCount: Int
-    let releaseDate: String
+    let releaseDate: Date
     let posterPath: String
     let overview: String
     var imageUrl: String {
@@ -33,6 +33,16 @@ struct Movies: Codable {
         case overview
         
     }
+    
+    func FormatDate() -> String{
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy"
+            
+        return dateFormatter.string(from: self.releaseDate)
+                
+        
+    }
 }
+
 
 

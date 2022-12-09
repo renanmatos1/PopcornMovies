@@ -11,7 +11,7 @@ import Foundation
 struct TvShows: Codable {
     
     let originalName: String
-    let releaseDate: String
+    let releaseDate: Date
     let voteAvarage: Double
     let voteCount: Int
     let posterPath: String
@@ -33,6 +33,15 @@ struct TvShows: Codable {
             
             
         }
+    
+    
+    func FormatDate() -> String{
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy"
+            
+            
+        return dateFormatter.string(from: self.releaseDate)
+            }
         
     }
 

@@ -17,6 +17,8 @@ class PeopleCell: UITableViewCell {
     @IBOutlet weak var bgGrey: UIImageView!
     @IBOutlet weak var backgroundImgView: UIImageView!
     
+    @IBOutlet weak var buttonNextPage: UIImageView!
+    
     var people: People?
     
     override func awakeFromNib() {
@@ -44,6 +46,12 @@ class PeopleCell: UITableViewCell {
         backgroundImgView.layer.shadowOpacity = 2
         backgroundImgView.layer.cornerRadius = 12
         backgroundImgView.layer.shadowRadius = 10
+        
+        if people.knownFor?.count == 0 {
+            
+            buttonNextPage.isHidden = true
+            
+        }
         
         // infos //
         peopleNameLabel.text = people.name

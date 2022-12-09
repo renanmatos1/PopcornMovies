@@ -29,13 +29,17 @@ extension PeopleViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        let peopleDetail: UIStoryboard = UIStoryboard(name: "PeopleDetail", bundle: nil)
+        if people[indexPath.row].knownFor?.count != 0 {
+            
+            let peopleDetail: UIStoryboard = UIStoryboard(name: "PeopleDetail", bundle: nil)
 
-        let peopleDetailController = peopleDetail.instantiateViewController(withIdentifier: "PeopleDetail") as! PeopleDetailController
+            let peopleDetailController = peopleDetail.instantiateViewController(withIdentifier: "PeopleDetail") as! PeopleDetailController
 
-        peopleDetailController.knownInfo = people[indexPath.row].knownFor!
+            peopleDetailController.knownInfo = people[indexPath.row].knownFor!
 
-        self.navigationController?.pushViewController(peopleDetailController, animated: true)
+            self.navigationController?.pushViewController(peopleDetailController, animated: true)
+            
+        }
 
     }
 

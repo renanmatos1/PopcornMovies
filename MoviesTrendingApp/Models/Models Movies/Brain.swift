@@ -67,6 +67,10 @@ struct Brain {
         
         do {
             
+            let dateFormat = DateFormatter()
+            dateFormat.dateFormat = "yyyy-MM-dd"
+            decoder.dateDecodingStrategy = .formatted(dateFormat)
+            
             let decodedData = try decoder.decode(Result.self, from: movieData)
             
             return decodedData
