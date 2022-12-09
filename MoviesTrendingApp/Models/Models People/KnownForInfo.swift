@@ -10,11 +10,14 @@ import Foundation
 struct KnownForInfo: Codable {
     
     let title: String?
+    let originalName: String?
+    let name: String?
     let overview: String
     let posterPath: String?
     let releaseDate: String?
     let voteAverage: Double
     let voteCount: Int
+    let firstDate: String?
     
     var knowForMovieImgUrl: String {
         
@@ -24,13 +27,15 @@ struct KnownForInfo: Codable {
     
     enum CodingKeys: String, CodingKey {
         
-        case title 
+        case title
+        case originalName = "original_name"
         case overview
         case posterPath = "poster_path"
         case releaseDate = "release_date"
         case voteAverage = "vote_average"
         case voteCount = "vote_count"
-        
+        case firstDate = "first_air_date"
+        case name = "name"
     }
     
 }

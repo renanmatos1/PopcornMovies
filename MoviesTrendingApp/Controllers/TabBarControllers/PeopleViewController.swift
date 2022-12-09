@@ -49,7 +49,6 @@ extension PeopleViewController: BrainDelegatePeople {
     func successPeople(decodedData: PeopleResult) {
         DispatchQueue.main.async {
             
-            
             self.people = decodedData.results
             self.tableViewPeople.reloadData()
             self.hideLoaderPeople()

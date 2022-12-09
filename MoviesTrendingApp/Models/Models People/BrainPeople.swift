@@ -64,7 +64,6 @@ struct BrainPeople {
         do {
             
             
-
             let decodedData = try decoder.decode(PeopleResult.self, from: decodedData)
 
             print(decodedData)

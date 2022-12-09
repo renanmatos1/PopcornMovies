@@ -44,12 +44,24 @@ class PeopleDetailCell: UITableViewCell {
         view.layer.shadowOpacity = 0.5
         
         // infos //
+        
         movieLabel.text = known.title
         releaseDateLabel.text = known.releaseDate
         voteCountLabel.text = String(known.voteCount)
-        ratingLabel.text = String(known.voteCount)
+        ratingLabel.text = String(known.voteAverage)
         descriptionLabel.text = known.overview
         imageViewMovie.loadFromPeopleDetail(UrlAdress: known.knowForMovieImgUrl)
+        
+        if movieLabel.text == nil {
+            
+            movieLabel.text = known.name
+            
+        }
+        
+        if releaseDateLabel.text == nil {
+
+            releaseDateLabel.text = known.firstDate
+        }
 
     }
 }

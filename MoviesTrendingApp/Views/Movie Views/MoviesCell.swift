@@ -20,8 +20,6 @@ class MoviesCell: UITableViewCell {
     @IBOutlet weak var bdGrey: UIImageView!
     @IBOutlet weak var voteCountLabel: UILabel!
     
-    @IBOutlet weak var viewActivity: UIView!
-    @IBOutlet weak var activityIndicatorMovies: UIActivityIndicatorView!
     
     var movies: Movies?
     
@@ -41,10 +39,8 @@ class MoviesCell: UITableViewCell {
     
     func cellSetup(movies: Movies) {
         
-        
-        
-        
-        // layout //
+    
+        // layout // colocar no awakeFromNib
         view.layer.cornerRadius = 12
         view.layer.shadowOpacity = 0.5
         backgroundImgView.layer.cornerRadius = 10
@@ -60,12 +56,11 @@ class MoviesCell: UITableViewCell {
         historyLabel.text = movies.overview
         movieImage.loadFrom(UrlAdress: movies.imageUrl)
         voteCountLabel.text = String(movies.voteCount)
-        
-        
-        
-    }
     
+    }
 }
+
+
 extension UIImageView {
         
         func loadFrom(UrlAdress: String){

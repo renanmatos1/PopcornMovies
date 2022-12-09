@@ -16,7 +16,6 @@ class PeopleCell: UITableViewCell {
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var bgGrey: UIImageView!
     @IBOutlet weak var backgroundImgView: UIImageView!
-    
     @IBOutlet weak var buttonNextPage: UIImageView!
     
     var people: People?

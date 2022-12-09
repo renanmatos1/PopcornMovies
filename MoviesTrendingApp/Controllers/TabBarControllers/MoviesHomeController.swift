@@ -41,14 +41,13 @@ class MoviesHomeController: UIViewController, UITableViewDelegate {
 
         }
 
-        func hideLoaderMovies() {
-            self.viewActivityIndicator.isHidden = true
-            self.activityIndicator.startAnimating()
-            self.view.isUserInteractionEnabled = true
-        }
-
-
+    func hideLoaderMovies() {
+        self.viewActivityIndicator.isHidden = true
+        self.activityIndicator.startAnimating()
+        self.view.isUserInteractionEnabled = true
+    }
 }
+
 
 extension MoviesHomeController: BrainDelegate {
     
@@ -60,8 +59,6 @@ extension MoviesHomeController: BrainDelegate {
             self.hideLoaderMovies()
             self.movies = decodedData.results
             self.tableView.reloadData()
-            
-            
         }
     }
     
@@ -69,7 +66,6 @@ extension MoviesHomeController: BrainDelegate {
         
         return
     }
-    
 }
 
 

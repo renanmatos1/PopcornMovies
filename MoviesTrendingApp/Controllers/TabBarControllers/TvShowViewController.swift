@@ -11,10 +11,9 @@ class TvShowViewController: UIViewController, UITableViewDelegate {
     
     
     @IBOutlet weak var tableViewTvShow: UITableView!
-    
     @IBOutlet weak var viewActivityIndicator: UIView!
-    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     var tvShow: [TvShows] = []
     var tvShowBrain = BrainTvShow()
     
@@ -29,6 +28,7 @@ class TvShowViewController: UIViewController, UITableViewDelegate {
         tvShowBrain.getApiTvshow()
         
     }
+    // loadder tv show //
     
     func showLoaderTvShow() {
             self.viewActivityIndicator.isHidden = false

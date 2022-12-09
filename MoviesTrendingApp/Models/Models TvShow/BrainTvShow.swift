@@ -50,7 +50,6 @@ struct BrainTvShow {
                     
                     self.delegate?.successTvShow(decodedData: tvShow! )
                     
-                   
                 }
             }
             
