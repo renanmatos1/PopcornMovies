@@ -11,33 +11,44 @@
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="partialCurl" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popcornImgLaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="tyX-sX-uQR">
-                                <rect key="frame" x="18" y="306" width="354" height="232"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="232" id="RdW-qc-CEO"/>
-                                    <constraint firstAttribute="width" constant="354" id="ksf-V3-na9"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red-gradient" translatesAutoresizingMaskIntoConstraints="NO" id="AfL-E1-4qx">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PopcornMovies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDd-jM-inq">
-                                <rect key="frame" x="97" y="515" width="197" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8QT-0m-wxZ">
+                                <rect key="frame" x="0.0" y="226" width="390" height="325"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PopcornMovies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sDd-jM-inq">
+                                        <rect key="frame" x="88" y="241" width="218" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgbin-popcorn-photographic-film-movies-and-popcorn-popcorn-illustration-XW08xaXW33rkquwbD7wASBw7H-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="tyX-sX-uQR">
+                                        <rect key="frame" x="20" y="54" width="354" height="232"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="tyX-sX-uQR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="259" id="5Xf-ef-RiY"/>
-                            <constraint firstItem="tyX-sX-uQR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="71a-yl-6Ks"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tyX-sX-uQR" secondAttribute="trailing" constant="18" id="XE4-RR-ox4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tyX-sX-uQR" secondAttribute="bottom" constant="272" id="iPt-gB-yOS"/>
+                            <constraint firstItem="8QT-0m-wxZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6PR-ZX-VJk"/>
+                            <constraint firstItem="8QT-0m-wxZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="179" id="IlS-oY-AIv"/>
+                            <constraint firstItem="AfL-E1-4qx" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="LoP-Wy-Wgh"/>
+                            <constraint firstItem="8QT-0m-wxZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Pon-eR-WCS"/>
+                            <constraint firstItem="AfL-E1-4qx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RRu-AQ-hbR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8QT-0m-wxZ" secondAttribute="bottom" constant="259" id="aFv-Wk-XNJ"/>
+                            <constraint firstAttribute="trailing" secondItem="8QT-0m-wxZ" secondAttribute="trailing" id="hlq-xK-Amh"/>
+                            <constraint firstAttribute="bottom" secondItem="AfL-E1-4qx" secondAttribute="bottom" id="ome-PQ-9DP"/>
+                            <constraint firstItem="AfL-E1-4qx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="t7Y-IL-NOU"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -47,7 +58,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="popcornImgLaunchScreen" width="160" height="173"/>
+        <image name="imgbin-popcorn-photographic-film-movies-and-popcorn-popcorn-illustration-XW08xaXW33rkquwbD7wASBw7H-removebg-preview" width="160" height="173"/>
+        <image name="red-gradient" width="160" height="240"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

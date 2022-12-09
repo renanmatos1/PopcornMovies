@@ -47,6 +47,8 @@ class PeopleCell: UITableViewCell {
         backgroundImgView.layer.cornerRadius = 12
         backgroundImgView.layer.shadowRadius = 10
         
+        // esconder a imagem do botão na celula quando for 0 //
+        
         if people.knownFor?.count == 0 {
             
             buttonNextPage.isHidden = true

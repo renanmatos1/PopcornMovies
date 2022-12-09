@@ -62,6 +62,8 @@ struct BrainPeople {
         let decoder = JSONDecoder()
 
         do {
+            
+            
 
             let decodedData = try decoder.decode(PeopleResult.self, from: decodedData)
 

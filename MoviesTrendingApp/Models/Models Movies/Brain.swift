@@ -67,6 +67,8 @@ struct Brain {
         
         do {
             
+            // date formate para formatação da data //
+            
             let dateFormat = DateFormatter()
             dateFormat.dateFormat = "yyyy-MM-dd"
             decoder.dateDecodingStrategy = .formatted(dateFormat)

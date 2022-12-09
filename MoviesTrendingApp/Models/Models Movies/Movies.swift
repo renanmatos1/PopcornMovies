@@ -15,7 +15,7 @@ struct Movies: Codable {
     let releaseDate: Date
     let posterPath: String
     let overview: String
-    var imageUrl: String {
+    var imageUrl: String { // closure para buscar a imagem diretamente //
         
         let imgUrl = "https://image.tmdb.org/t/p/w500"
         
@@ -33,6 +33,8 @@ struct Movies: Codable {
         case overview
         
     }
+    
+    // func para formatar a data dessa maneira "dd/MM/yyyy" //
     
     func FormatDate() -> String{
             let dateFormatter = DateFormatter()

@@ -66,7 +66,7 @@ class MoviesCell: UITableViewCell {
     }
     
 }
-    extension UIImageView {
+extension UIImageView {
         
         func loadFrom(UrlAdress: String){
             

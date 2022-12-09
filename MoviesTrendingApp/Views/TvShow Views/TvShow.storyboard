@@ -19,7 +19,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Co8-9b-87Q">
                                 <rect key="frame" x="0.0" y="91" width="390" height="753"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.65490196079999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell2" rowHeight="450" id="XrV-mi-ntA" customClass="TvShowCell" customModule="PopcornMovies" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="450"/>
@@ -36,7 +36,7 @@
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6b6-no-hF4">
                                                             <rect key="frame" x="6" y="19.333333333333329" width="136" height="197.66666666666669"/>
-                                                            <color key="backgroundColor" red="0.77254901960784317" green="0.82352941176470584" blue="0.84313725490196079" alpha="0.76810844369999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </view>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1dX-LJ-dDa">
@@ -164,6 +164,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.83609271519999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="LIp-h6-sjH" secondAttribute="trailing" constant="5" id="5Vn-7k-a7g"/>
                                                 <constraint firstAttribute="bottom" secondItem="LIp-h6-sjH" secondAttribute="bottom" constant="8" id="9XO-Ic-VBW"/>
@@ -194,7 +195,7 @@
                                         <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </activityIndicatorView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstItem="cWV-vQ-LW5" firstAttribute="leading" secondItem="eu0-aN-aSw" secondAttribute="leading" constant="32" id="2Ec-8W-1Pz"/>
                                     <constraint firstAttribute="trailing" secondItem="cWV-vQ-LW5" secondAttribute="trailing" constant="32" id="hmV-E7-XI1"/>
@@ -204,7 +205,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FeA-IJ-Q1a"/>
-                        <color key="backgroundColor" red="0.79929315476190477" green="0.656372236394558" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.65490196078431373" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eu0-aN-aSw" firstAttribute="centerX" secondItem="Co8-9b-87Q" secondAttribute="centerX" id="7Wc-UQ-v8R"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Co8-9b-87Q" secondAttribute="bottom" constant="-34" id="90I-Sj-IlA"/>
@@ -256,17 +257,11 @@
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

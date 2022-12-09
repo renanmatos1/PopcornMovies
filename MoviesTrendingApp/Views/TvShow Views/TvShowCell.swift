@@ -50,6 +50,7 @@ class TvShowCell: UITableViewCell {
         historyLabelTs.text = tvShow.overview
         voteCountLabel.text = String(tvShow.voteCount)
         tvShowImage.loadFromTvShow(UrlAdress: tvShow.imageUrl)
+    
         
     }
 }

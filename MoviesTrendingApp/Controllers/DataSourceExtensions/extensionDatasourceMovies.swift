@@ -26,8 +26,4 @@ extension MoviesHomeController: UITableViewDataSource{
         
         return cell
     }
-    
-    
-    
-    
 }

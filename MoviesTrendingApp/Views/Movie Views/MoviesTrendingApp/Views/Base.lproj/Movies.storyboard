@@ -19,7 +19,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2F6-yQ-rK0">
                                 <rect key="frame" x="0.0" y="91" width="390" height="753"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.65490196079999996" green="0.1764705882" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="450" id="lkx-47-OKF" customClass="MoviesCell" customModule="PopcornMovies" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="450"/>
@@ -34,9 +34,9 @@
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="texture-grey" translatesAutoresizingMaskIntoConstraints="NO" id="GXo-ZM-5aN">
                                                             <rect key="frame" x="0.0" y="0.0" width="373" height="434"/>
                                                         </imageView>
-                                                        <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M2q-H1-NUN">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M2q-H1-NUN">
                                                             <rect key="frame" x="6" y="19.333333333333329" width="136" height="197.66666666666669"/>
-                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </view>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDY-YL-GqX">
@@ -125,7 +125,7 @@
                                                                 <constraint firstAttribute="height" constant="51" id="ekR-PB-0h1"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -164,6 +164,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.83609271523178808" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="esz-oh-chO" firstAttribute="leading" secondItem="lxH-i0-TAt" secondAttribute="leading" constant="5" id="7gY-3p-DXf"/>
                                                 <constraint firstAttribute="trailing" secondItem="esz-oh-chO" secondAttribute="trailing" constant="5" id="NW3-FB-OV9"/>
@@ -194,7 +195,7 @@
                                         <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </activityIndicatorView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.78022959179999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.65571862700000005" green="0.1777764375" blue="0.1038678894" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="VgV-S8-IaD" secondAttribute="trailing" constant="32" id="5Yk-Sw-y4P"/>
                                     <constraint firstItem="VgV-S8-IaD" firstAttribute="top" secondItem="Bjj-mz-lOf" secondAttribute="top" constant="30" id="R9N-Tv-ovE"/>
@@ -204,7 +205,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.89652423469999998" green="0.13634787809999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.65490196078431373" green="0.1764705882352941" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Bjj-mz-lOf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="280" id="H4N-PA-Qg1"/>
@@ -236,6 +237,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sO9-8w-oeb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Movies" image="film" catalog="system" id="aLf-eb-BWj"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="uiJ-18-wv4"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ffA-7A-NVp">
                         <rect key="frame" x="0.0" y="47" width="390" height="96"/>
@@ -264,9 +266,6 @@
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

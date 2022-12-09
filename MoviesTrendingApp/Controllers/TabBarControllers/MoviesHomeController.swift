@@ -33,6 +33,7 @@ class MoviesHomeController: UIViewController, UITableViewDelegate {
         
     }
     
+    // metodo para ACTIVITY INDICATOR //
     func showLoaderMovies() {
             self.viewActivityIndicator.isHidden = false
             self.activityIndicator.startAnimating()

@@ -38,6 +38,7 @@
 		419E07A8293C813200D2F954 /* TvResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E07A7293C813200D2F954 /* TvResults.swift */; };
 		419E07AA293D3EA300D2F954 /* extensionDatasourceTvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E07A9293D3EA300D2F954 /* extensionDatasourceTvShow.swift */; };
 		41A3AD4F293C714C003E525D /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3AD4E293C714C003E525D /* CustomTabBarController.swift */; };
+		41D2FB6F2942D97F00754129 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D2FB6E2942D97F00754129 /* SplashViewController.swift */; };
 		41F2E8EE293EA77400DF1754 /* extensionDatasourcePeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2E8ED293EA77400DF1754 /* extensionDatasourcePeople.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		419E07A7293C813200D2F954 /* TvResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvResults.swift; sourceTree = "<group>"; };
 		419E07A9293D3EA300D2F954 /* extensionDatasourceTvShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionDatasourceTvShow.swift; sourceTree = "<group>"; };
 		41A3AD4E293C714C003E525D /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		41D2FB6E2942D97F00754129 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		41F2E8ED293EA77400DF1754 /* extensionDatasourcePeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionDatasourcePeople.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +206,7 @@
 				41A3AD4E293C714C003E525D /* CustomTabBarController.swift */,
 				410948C1293A5F410042D4D9 /* MoviesHomeController.swift */,
 				419E079A293C78CA00D2F954 /* TvShowViewController.swift */,
+				41D2FB6E2942D97F00754129 /* SplashViewController.swift */,
 				419E079C293C79B000D2F954 /* PeopleViewController.swift */,
 				4161D39D293FB17000D6A037 /* PeopleDetailController.swift */,
 			);
@@ -335,6 +338,7 @@
 				419E07A8293C813200D2F954 /* TvResults.swift in Sources */,
 				41890997293E6FF500D16523 /* PeopleCell.swift in Sources */,
 				4189099E293E73FD00D16523 /* BrainPeople.swift in Sources */,
+				41D2FB6F2942D97F00754129 /* SplashViewController.swift in Sources */,
 				4189099C293E73DA00D16523 /* PeopleResult.swift in Sources */,
 				410948D5293A63310042D4D9 /* Movies.swift in Sources */,
 				410948D8293A680F0042D4D9 /* Brain.swift in Sources */,
